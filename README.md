@@ -22,7 +22,7 @@ go to `http://localhost:3000/` in browser
 
 ### Additonal Resources
 
-(How to use babel with your tool of choice)[https://babeljs.io/docs/setup/]
+(https://babeljs.io/docs/setup/)[How to use babel with your tool of choice]
 
-(Setting up babel (and a react dev environment) with webpack)[https://robots.thoughtbot.com/setting-up-webpack-for-react-and-hot-module-replacement]
+(https://robots.thoughtbot.com/setting-up-webpack-for-react-and-hot-module-replacement) with webpack)[Setting up babel (and a react dev environment]
 
