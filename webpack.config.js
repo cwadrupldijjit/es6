@@ -1,15 +1,19 @@
 var path = require('path')
-var appPath = path.resolve(__dirname, 'src', 'index.js')
-var buildPath = path.resolve(__dirname, 'public')
+var appPath = path.resolve(__dirname, 'app', 'app.tsx')
+var buildPath = path.resolve(__dirname, 'public', 'js')
 
 module.exports = {
 
   entry: appPath,
+  
+  resolve: {
+    extensions: ['', 'webpack.js', '.js', '.ts', '.tsx']
+  },
+  
+  // devtools: '',
 
   output: {
-    filename: 'app.js',
-    path: buildPath,
-    publicPath: 'public'
+    filename: buildPath + '/bundle.js'
   },
 
   module: {
@@ -17,7 +21,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel-loader']
+        loaders: ['ts-loader']
       }
     ]
   }
